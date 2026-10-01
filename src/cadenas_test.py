@@ -1,5 +1,11 @@
-from cadenas import estiliza_mensaje
-  
+from Ejercicio1_invertircaden import *
+
+def test_invierte_cadena():
+    print("Probando invierte_cadena...")
+    assert invierte_cadena("") == ""
+    assert invierte_cadena("Texto de prueba") == "abeurp ed otxeT"
+    assert invierte_cadena("seres") == "seres"
+
 def test_estiliza_mensaje():
     print("Probando estiliza_mensaje...")
     assert estiliza_mensaje("Fundamentos de programación 1") == "FuNdAmEnToS dE pRoGrAmAcIóN 1"
@@ -8,5 +14,9 @@ def test_estiliza_mensaje():
     assert estiliza_mensaje("Hola Mundo", alterna_may_min=False, usa_dieresis=True, sustituye_espacios="-") == "Hölä-Mündö"
     assert estiliza_mensaje("Hola Mundo", alterna_may_min=True, usa_dieresis=False, sustituye_espacios="_") == "HoLa_MuNdO"
 
-test_estiliza_mensaje()
+def test_es_palindromo():
+    # TODO: Resolver en casa 
+
+test_invierte_cadena()
+#test_estiliza_mensaje()
 print("Todas las pruebas pasaron correctamente.")
