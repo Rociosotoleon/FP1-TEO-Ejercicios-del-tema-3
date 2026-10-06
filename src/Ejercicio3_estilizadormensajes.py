@@ -13,7 +13,9 @@ def estiliza_mensaje(texto: str, alterna_may_min: bool = True, usa_dieresis = Fa
         
         
         res += c
-        texto = res
+        if c == " ":
+            c = sustituye_espacios
+            
 
     if usa_dieresis:
         texto = texto.replace("a", "ä").replace("e", "ë").replace("i", "ï").replace("o", "ö").replace("u", "ü")
