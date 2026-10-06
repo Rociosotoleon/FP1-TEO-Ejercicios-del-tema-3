@@ -1,4 +1,6 @@
 from Ejercicio1_invertircaden import *
+from Ejercicio2_palindromo import *
+
 
 def test_invierte_cadena():
     print("Probando invierte_cadena...")
@@ -15,8 +17,14 @@ def test_estiliza_mensaje():
     assert estiliza_mensaje("Hola Mundo", alterna_may_min=True, usa_dieresis=False, sustituye_espacios="_") == "HoLa_MuNdO"
 
 def test_es_palindromo():
-    # TODO: Resolver en casa 
+    print("Probando es_paliindromo")
+    assert es_palindromo("reconocer") == True
+    assert es_palindromo("Radar") == True
+    assert es_palindromo("Amor a Roma") == True
+    assert es_palindromo("Luz azul") == True
 
-test_invierte_cadena()
+ 
+#test_invierte_cadena()
 #test_estiliza_mensaje()
+test_es_palindromo()
 print("Todas las pruebas pasaron correctamente.")

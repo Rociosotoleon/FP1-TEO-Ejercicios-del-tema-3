@@ -10,7 +10,7 @@ def invierte_cadena(cadena: str) -> str:
      (str) EL texto recibido, al revés.
     '''
     res = ""
-    for c in texto:
+    for c in cadena:
         res = c + res
     return res
-   
+    

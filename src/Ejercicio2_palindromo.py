@@ -1,5 +1,5 @@
 
-def es_palindromo(texto: str, ignora_espacios: bool = False, ignora_mayusculas: bool = False) -> bool:
+def es_palindromo(texto: str, ignora_espacios: bool = True, ignora_mayusculas: bool = True) -> bool:
     ''' 
     Devuelve True si el texto recibido es un palíndromo
 
@@ -12,7 +12,10 @@ def es_palindromo(texto: str, ignora_espacios: bool = False, ignora_mayusculas: 
 
     if ignora_mayusculas:
         texto = texto.lower()
+    
+    res = ""
+    for c in texto:
+        res = c + res 
 
     
-    
-    return texto == invierte_cadena(texto)
+    return texto == res
